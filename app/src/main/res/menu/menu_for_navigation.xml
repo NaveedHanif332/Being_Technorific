@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Freelancing"
+        android:id="@+id/freelancing"
+        android:icon="@drawable/ic_baseline_monetization_on_24"
+       >
+    </item>
+    <item
+        android:title="Motivation"
+        android:id="@+id/motivation"
+        android:icon="@drawable/ic_baseline_directions_run_24"
+       >
+
+    </item>
+    <item
+        android:title="How To"
+        android:id="@+id/how_to"
+        android:icon="@drawable/ic_baseline_live_help_24"
+       >
+
+    </item>
+    <item
+        android:title="About us"
+        android:id="@+id/about"
+        android:icon="@drawable/ic_baseline_perm_identity_24"
+        >
+
+    </item>
+</menu>

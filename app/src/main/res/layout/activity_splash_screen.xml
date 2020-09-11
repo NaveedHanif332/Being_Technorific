@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".splashScreen">
+
+    <LinearLayout
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Splash_screen">
+        <ImageView
+            android:layout_width="374dp"
+            android:layout_height="309dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/image">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:text="Develop By Naveed Hanif">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/animation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="398dp"
+                android:layout_gravity="center"
+                app:lottie_rawRes="@raw/no_internet"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="true"/>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="-2dp"
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                />
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="WebViewLayout">
+                <WebView
+                    android:id="@+id/web_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </WebView>
+            </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            app:navigationIcon="@drawable/ic_baseline_menu"
+            android:layout_height="wrap_content"
+            app:hideOnScroll="true"
+            android:layout_gravity="bottom"
+            app:menu="@menu/menu"
+            android:id="@+id/app_bar"
+            app:fabCradleMargin="7dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabAlignmentMode="end"
+            android:backgroundTint="@color/colorPrimary"
+            >
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/floating_botton"
+                android:backgroundTint="#EFBB53"
+                android:src="@drawable/ic_baseline_contacts_24"
+                app:layout_anchor="@id/app_bar">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
